@@ -1,0 +1,20 @@
+{
+  "name": "das-basic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently --kill-others \"tailwindcss -i ./src/input.css -o ./src/dist/output.css --watch --verbose\" \"vite --host 0.0.0.0 ./src\"",
+    "generate": "npx tailwindcss build -i ./src/input.css -o ./build/output.css --minify"
+  },
+  "author": "Aptex <consulting@aptex.de>",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "concurrently": "^6.5.1",
+    "postcss-cli": "^8.3.1",
+    "prettier": "2.2.1",
+    "tailwindcss": "^3.0.2",
+    "vite": "^2.7.10"
+  }
+}

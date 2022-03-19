@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Roboto+Mono:wght@400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .container {
+        @apply w-full max-w-6.5xl mx-auto px-4 xl:px-0;
+    }
+
+    .section-negative::before {
+        content: "";
+        @apply bg-primary-600;
+        @apply h-32;
+        @apply w-full;
+        @apply block;
+        position: absolute;
+        top:0;
+        left:0;
+    }
+
+    .framed-card {
+        @apply relative;
+    }
+    .framed-card::before {
+        content: "";
+        @apply absolute;
+        @apply border-solid border-primary-600;
+        @apply block;
+        border-width: 3px;
+        top: .5rem;
+        left: .5rem;
+        width: calc(100% - 1rem);
+        height: calc(100% - 1rem);
+        transition: all 0.2s ease-in-out;
+    }
+
+    @media screen(md) {
+        .framed-card:hover:before {
+            @apply scale-125;
+            @apply opacity-0;
+            z-index: 0;
+        }
+    }
+}
