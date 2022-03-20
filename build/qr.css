@@ -21,12 +21,12 @@ body{
       
     color: aliceblue;
     position: absolute;
-    top: 5%;
-    left: 10%;
+    top: 27.5%;
+    left: 27.5%;
     display:flex;
   }
   .col{
-    width:500px;
+    width: 450px;
 
   }
   .col h4{
