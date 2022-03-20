@@ -5,7 +5,7 @@ var password=document.getElementById("password").value;
 
 if (username=="admin" && password=="password") {
     alert("login succesfull");
-    window.location.href = "http://example.com/new_url";
+    window.location.href = "points/points.html";
     return false;
 } else {
     alert("login failed");

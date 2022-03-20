@@ -6,7 +6,7 @@
 }
 
 body{
-    background: url(login/dustbin.jpg) no-repeat center center fixed;
+    background: url(dutbin.png) no-repeat center center fixed;
     background-size: cover;
 }
 
@@ -21,8 +21,8 @@ body{
       
     color: aliceblue;
     position: absolute;
-    top: 5%;
-    left: 10%;
+    top: 35%;
+    left: 30%;
     display:flex;
   }
   .col{
