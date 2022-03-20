@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background: url(dustbin.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container{
+   
+    color: aliceblue;
+    position: absolute;
+    top: 15%;
+    left: 10%;
+}
+
+.container h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    border-bottom: 3px solid black; 
+    margin-bottom: 20px;
+    padding: 0px 0;
+}
+
+.box{
+    width: 100%;
+    border-bottom: 1px solid black;
+    margin: 12px 0px;
+}
+
+.box input{
+    background: none;
+    width: 75%;
+    padding: 5px 10px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color: aliceblue;
+}
+
+.box i{
+    width: 25px;
+    text-align: center;
+}
+
+.btn{
+    cursor: pointer;
+    outline: none;
+    width: 30%;
+    margin: 5px 0;
+    padding: 4%;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-size: 18px;
+    background: none;
+    color: aliceblue;
+}
+
+.btn:hover{
+    opacity: 0.5;
+    color: black;
+    background: white;
+}
